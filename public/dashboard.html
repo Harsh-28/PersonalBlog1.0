@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <div class="login">
+        <div id="loginUI"></div>
+    </div>
+
+
+
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a href="/editor" class="link">editor</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="heading">your Blogs</h1>
+
+    <section class="blogs-section">
+        <!-- <div class="blog-card">
+                <img src="img/header.png" class="blog-image" alt="">
+                <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+                <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+                <a href="/" class="btn dark">read</a>
+                <a href="/" class="btn grey">edit</a>
+                <a href="/" class="btn danger">delete</a>
+            </div> -->
+    </section>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.9.1/fire base-ui-auth.js"></script> -->
+
+    <script src="js/firebase.js"></script>
+    <script src="js/doashboard.js"></script>
+    <script src="js/nav.js"></script>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBW4ee_iSQ-VPrY6qT_AHfUuKgXb-KzTtw",
+            authDomain: "blog-c8266.firebaseapp.com",
+            projectId: "blog-c8266",
+            storageBucket: "blog-c8266.appspot.com",
+            messagingSenderId: "420078456230",
+            appId: "1:420078456230:web:ac70ed63cc357d0f219367",
+            measurementId: "G-HEVQE07976"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+</body>
+</html>
